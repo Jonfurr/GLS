@@ -1,0 +1,19 @@
+<% include ../partials/header %>
+
+<form name="new_res_form" id="new_res_form" method="post" action="/reservations/new">
+    <div>
+        Name: <input type="text" name="name" id="name">
+    </div>
+    <div>
+        Number: <input type="text" name="phone_num" id="phone_num">
+    </div>
+    <div>
+       Date: <input type="text" name="date" id="date">
+    </div>
+    <div>
+       Time: <input type="text" name="time" id="time">
+    </div>
+    <input type="submit" value="Submit">
+</form>
+
+<% include ../partials/footer %>
