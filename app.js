@@ -6,10 +6,21 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var reservations = require('./routes/reservations');
+var api = require('./routes/api/index')
 
 var app = express();
 
+var moment = require('moment');
+
+var twilio = require('twilio');
+
+var mongoose = require('mongoose');
+
+var Agenda = require('agenda');
+var agenda = new Agenda({db: {address: process.env.MONGO_DB_CONNECT_GLS}});
+
+mongoose.connect(process.env.MONGO_DB_CONNECT_GLS);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -23,7 +34,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/reservations', reservations);
+app.use('/api', api)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
