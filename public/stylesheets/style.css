@@ -32,3 +32,32 @@
 #events {
 	height: 400px;
 }
+
+.reservation_list {
+	border: 1px solid black;
+}
+
+.reservation_list ul {
+	list-style-type: none;
+}
+
+#footer-nav {
+	margin-top: 15px;
+	background-color: white;
+	color: black;
+}
+
+#footer-nav ul {
+	list-style-type: none;
+}
+
+#footer-nav a {
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#footer-nav a:hover {
+	list-style-type: none;
+	text-decoration: underline;
+}

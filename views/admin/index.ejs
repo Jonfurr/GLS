@@ -1,3 +1,18 @@
 <% include ../partials/header %>
-  <a href="/">Home</a> | <a href="/admin/login">Login</a> | <a href="/admin/register">Register</a>
+
+	<% if (reservations.length > 0) { %>
+		<% for (i=0; i<reservations.length; i++) { %>
+			<div class='col-md-4 col-md-offset-4'>
+				<div class='reservation_list text-center'>
+					<h1><%= reservations[i].name %></h1>
+					<ul>
+						<li>Password: <%= reservations[i].secret %></li>
+						<li>Phone Number: <%= reservations[i].phone_num %></li>
+						<li>Reservation Time: <%= reservations[i].time %></li>
+					</ul>
+				</div>
+			</div>
+		<% } %>
+  <% } %> </h1>
+	
 <% include ../partials/footer %>

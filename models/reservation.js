@@ -6,6 +6,7 @@ var reservationSchema = new mongoose.Schema({
   phone_num: { type: String, required: true },
   date: { type: String, required: true },
   time: { type: String, required: true },
+  secret: { type: String, required: true },
   created_at: Date,
   updated_at: Date
 });

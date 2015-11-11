@@ -6,26 +6,24 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var reservations = require('./routes/reservations');
-var api = require('./routes/api/index')
+var api = require('./routes/api/')
 var admin = require('./routes/admin')
 
 var app = express();
 
 var moment = require('moment');
-
 var twilio = require('twilio');
 var twilioAPI = require('twilio-api'),
     cli = new twilioAPI.Client(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
-
-var mongoose = require('mongoose');
-
 var Agenda = require('agenda');
 var agenda = new Agenda({db: {address: process.env.MONGO_DB_CONNECT_GLS}});
 
+var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_DB_CONNECT_GLS);
-// view engine setup
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
 
 
 app.use(logger('dev'));
