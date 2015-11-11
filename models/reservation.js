@@ -1,4 +1,4 @@
-// /models/user.js
+
 var mongoose = require('mongoose');
 
 var reservationSchema = new mongoose.Schema({

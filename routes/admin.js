@@ -1,6 +1,6 @@
 var express = require('express');
 var passport = require('passport');
-var Account = require('../models/account');
+var User = require('../models/user');
 var router = express.Router();
 
 
@@ -13,24 +13,36 @@ router.get('/register', function(req, res) {
 });
 
 router.post('/register', function(req, res) {
-    Account.register(new Account({ username : req.body.username }), req.body.password, function(err, account) {
-        if (err) {
-            return res.render('register', { account : account });
-        }
+    var username = req.body.username;
+    var email = req.body.email;
+    var password = req.body.password;
 
-        passport.authenticate('local')(req, res, function () {
-        	// ERROR HERE!
-            res.redirect('/');
-        });
+    var newUser = User({
+        username: username,
+        email: email,
+        password: password
     });
+
+    newUser.save(function(err) {
+        if (err) console.log(err);
+    });
+    
+
+    res.redirect('/authenticate', {user : req.user });
+});
+
+router.post('/authenticate', function(req, res) {
+
+
+    res.redirect('/', {user: req.user})
 });
 
 router.get('/login', function(req, res) {
     res.render('admin/login', { user : req.user });
 });
 
-router.post('/login', passport.authenticate('local'), function(req, res) {
-    res.redirect('/');
+router.post('/login', function(req, res) {
+    res.redirect('/authenticate')
 });
 
 router.get('/logout', function(req, res) {
