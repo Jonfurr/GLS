@@ -1,16 +1,63 @@
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#banner {
+	background-image: url(../images/banner.png);
+	background-image: no-repeat;
+	border-bottom: 2px solid black;	
+	width: auto;
+	height: 400px;
 }
 
-a {
-  color: #00B7FF;
+#navigation{
+	height:75px;
+	background-color: #515151;
+	border-bottom: 2px solid black;
+	color:white;
 }
 
-label {
-	float: left;
-	text-align: right;
-	margin-right: 15px;
-	width: 100px;
+#navigation ul {
+	list-style-type: none;
+}
+
+#navigation a {
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	list-style-type: none;
+	text-decoration: underline;
+}
+
+#events {
+	height: 400px;
+}
+
+.reservation_list {
+	border: 1px solid black;
+}
+
+.reservation_list ul {
+	list-style-type: none;
+}
+
+#footer-nav {
+	margin-top: 15px;
+	background-color: white;
+	color: black;
+}
+
+#footer-nav ul {
+	list-style-type: none;
+}
+
+#footer-nav a {
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#footer-nav a:hover {
+	list-style-type: none;
+	text-decoration: underline;
 }
