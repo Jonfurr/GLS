@@ -1,12 +1,33 @@
 
-#banner {
-	background-image: url(../images/banner.png);
-	border-bottom: 2px solid black;	
-	width: 1400px;
-	height: 400px;
+.banner {
+	background-color: #2abf77;
+	border-bottom: 2px solid black;		
 }
 
-#navigation{
+#brand {
+	color: black;
+	text-shadow: 1px 1px #36ce57;
+	font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+
+.benny_box {
+	padding:10px;
+	margin:50px; 
+}
+.benny_box img {
+	border: 2px solid black;
+}
+
+#gmap_canvas {
+	border: 2px solid black;
+}
+
+.map, .drinks, .cal {
+	margin-bottom: 50px;
+}
+
+/*#navigation{
 	width: 1400px;
 	height:75px;
 	background-color: rgba(20,20,20,.3);
@@ -29,44 +50,36 @@
 #navigation a:hover {
 	list-style-type: none;
 	color: #80f6ac;
-}
-
-.content {
-	width: 1400px;
-	border-bottom: 2px solid black;	
-}
+}*/
 
 .reservation_list {
-	border-bottom: 1px solid black;
-}
-
-.reservation_list ul {
 	list-style-type: none;
+	margin-bottom: 10px; 
+	margin-left: 10px;
 }
 
 #footer-nav {
-	width: 1400px;
-	background-color: white;
 	color: black;
 	border-top: 2px solid black;
 }
 
-#footer-nav ul {
-	list-style-type: none;
-}
-
 #footer-nav a {
-	color: black;
+	color: #2abf77;
 	list-style-type: none;
 	text-decoration: none;
 }
 
 #footer-nav a:hover {
+	color: black;
 	list-style-type: none;
-	text-decoration: underline;
 }
 
 .drinks h1 {
 	font-family: 'Tangerine', serif;
     font-size: 48px;
+}
+@media (max-width: 800px) {
+    .hidden-800 {
+        display:none !important;
+    }
 }

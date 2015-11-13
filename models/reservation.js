@@ -7,6 +7,7 @@ var reservationSchema = new mongoose.Schema({
   date: { type: String, required: true },
   time: { type: String, required: true },
   secret: { type: String, required: true },
+  partyNum: { type: Number, required: true},
   created_at: Date,
   updated_at: Date
 });

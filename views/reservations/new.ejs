@@ -1,5 +1,6 @@
 <% include ../partials/header %>
-<div class="panel col-md-2">
+<div class="panel col-md-4 col-md-offset-4 text-center">
+  <%= error %>
     <form name="new_res_form" id="new_res_form" method="post" action="/reservations/new">
         <div>
             <label>Name:</label> <input type="text" name="name" id="name" placeholder="First Last">
@@ -81,6 +82,18 @@
               <option>30</option>
               <option>45</option>
             </select>
+        </div>
+        <div>
+          <label>Number in your Party:</label>
+            <select name="partyNum" class="form-control" id="partyNum">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+
         </div>
         <input type="submit" value="Submit">
     </form>
