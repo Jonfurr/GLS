@@ -23,5 +23,5 @@ My long-term plan is to only update the count once the user has been checked-in 
 * Admin (doorguys and staff) auth is not functioning. Currently anyone can access the list of current reservations. I hit brick walls with this, so I abandoned it for after presentations.
 * I will eventually create models for events and drinks, so the staff can update this on their own rather than hard coding or embedding a google calendar.
 
-
+[Green Light Social](https://calm-lake-6254.herokuapp.com/)
 [Home screenshot](https://github.com/Jonfurr/GLS/issues/3)
