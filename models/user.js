@@ -11,5 +11,5 @@ var userSchema = new mongoose.Schema({
 
 var User = mongoose.model('User', userSchema);
 
-// Make this available to our other files
+
 module.exports = User;

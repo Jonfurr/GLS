@@ -27,31 +27,6 @@
 	margin-bottom: 50px;
 }
 
-/*#navigation{
-	width: 1400px;
-	height:75px;
-	background-color: rgba(20,20,20,.3);
-	border-bottom: 2px solid black;
-	color:white;
-}
-
-#navigation ul {
-	padding-top: 18px;
-	list-style-type: none;
-}
-
-
-#navigation a {
-	color: black;
-	list-style-type: none;
-	text-decoration: none;
-}
-
-#navigation a:hover {
-	list-style-type: none;
-	color: #80f6ac;
-}*/
-
 .reservation_list {
 	list-style-type: none;
 	margin-bottom: 10px; 
@@ -78,6 +53,7 @@
 	font-family: 'Tangerine', serif;
     font-size: 48px;
 }
+
 @media (max-width: 800px) {
     .hidden-800 {
         display:none !important;

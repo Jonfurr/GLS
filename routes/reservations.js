@@ -20,7 +20,7 @@ router.get('/new', function(req, res, next) {
    });
 
 router.post('/new', function(req, res, next) {
-    var secretArray = ['GLS', 'Green Light Social','Kyle is a butt'];
+    var secretArray = ['GLS', 'Green Light Social','GA WDI'];
     var name = req.body.name;
     var phone_num = '+1' + req.body.phone_num;
     var date = req.body.month.substring(0,2)+"/"+req.body.day+"/"+req.body.year;

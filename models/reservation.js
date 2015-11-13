@@ -18,5 +18,5 @@ reservationSchema.methods.confirmNum = function() {
 
 var Reservation = mongoose.model('Reservation', reservationSchema);
 
-// Make this available to our other files
+
 module.exports = Reservation;
