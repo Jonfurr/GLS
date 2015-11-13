@@ -6,4 +6,18 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/events', function(req,res, next) {
+	res.render('events')
+});
+
+router.get('/drinks', function(req, res, next){
+	res.render('drinks')
+});
+
+router.get('/contact', function(req, res, next){
+	res.render('contact')
+});
+
 module.exports = router;
+
+
