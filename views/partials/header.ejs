@@ -9,7 +9,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="javascripts/main.js"></script>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
 		<link rel="stylesheet" href="/stylesheets/style.css">
 	</head>
 	<body>
@@ -17,26 +17,23 @@
 		  <div class="container-fluid banner">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <a class="navbar-brand" id='brand' href="/">Green Light Social</a>
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_links" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" id='brand' href="/">Green Light Social</a>
-		    </div>
-
+			</div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li><a href="/drinks">Drinks </a></li>
-		        <li><a href="/events">Events </a></li>
-		        <li><a href="/contact">Contact </a></li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="/reservations/new">Benny's Room</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
+			    <div class="collapse navbar-collapse" id="nav_links">
+			      <ul class="nav navbar-nav navbar-right list-unstyled">
+			        <li><a class='links' href="/drinks">Drinks </a></li>
+			        <li><a class='links'  href="/events">Events </a></li>
+			        <li><a class='links'  href="/contact">Contact </a></li>
+			        <li><a class='links'  href="/reservations/new">Benny's Room</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<!-- <div class="container" id='banner'>		
